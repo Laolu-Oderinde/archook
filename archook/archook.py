@@ -104,8 +104,8 @@ def get_pro_paths():
     """Return 2 lists, for adding to Windows PATH and python sys.path"""
     P = locate_arcgis(pro=True)
     C = locate_pro_conda()
-    # P = r"C:\Program Files\ArcGIS\Pro"
-    # C = r"C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3"
+    P = r"C:\Program Files\ArcGIS\Pro"
+    C = r"C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3"
     PRO_WIN_PATHS = inspect.cleandoc(
         r"""
         {C}
